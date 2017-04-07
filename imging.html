@@ -1,0 +1,38 @@
+<html>
+	<head>
+	<title>Hello</title>
+	<script src="js/jquery-2.2.0.min.js"></script>
+	<script>
+		$(document).ready(function(e){
+		$('#bt1').click(function()
+		{
+		$('#car1').fadeOut();
+		$('#car2').fadeOut(20);
+		$('#car3').fadeOut("slow");
+		});
+		$('#bt').click(function()
+		{
+		$('#car1').fadeIn();
+		$('#car2').fadeIn(2000);
+		$('#car3').fadeIn("slow");
+
+		});
+		});
+	</script>
+	</head>
+	<body>
+	<button id="bt">fadein</button>
+	<button id="bt1">fadeout</button>
+		<div id="car1">
+		<img src="01.jpg" width="200" height="200" style="border:solid"/>
+		</div>
+		<br>
+		<div id="car2">
+		<img src="03 chrysler 300c concept.jpg" width="200" height="200" style="border:solid"/>
+		</div>
+		<br>
+		<div id="car3">
+		<img src="6series_cou_03.jpg" width="200" height="200" style="border:solid"/>
+		</div>
+	</body>
+</html>
